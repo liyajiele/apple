@@ -1,0 +1,893 @@
+body {
+    background: #f2f2f2;
+}
+.small {
+    display: block;
+    width: 100%;
+    height: 44px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+.small .small_content {
+    max-width: 768px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.small .small_content div {
+    width: 33.3333%;
+    height: 100%;
+    float: left;
+}
+.small .small_content .menu .caidan {
+    width: 20px;
+    height: 20px;
+    margin-top: 12px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.small .small_content .menu .line_one {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin-top: 5px;
+    transition: transform 1s ease;
+}
+.small .small_content .menu .line_two {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    margin-top: 5px;
+    transition: transform 1s ease;
+}
+.yincang {
+    width: 100%;
+    height: auto;
+    background: #000;
+    position: absolute;
+    top: 43px;
+    left: 0;
+    display: none;
+    z-index: 500000;
+}
+.yincang a {
+    color: #fff;
+}
+.yincang .cang_content {
+    z-index: 2;
+    top: 44px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 48px;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.yincang .cang_content li {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 1em;
+    border-bottom: 1px solid #333;
+}
+.large {
+    display: none;
+}
+
+/*小屏*/
+.nav_images {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.nav_images .images {
+    width: 100%;
+    height: auto;
+}
+.nav_images .images li {
+    width: 100%;
+    height: 200px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.nav_images .images li .images_one {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/9.jpg") center;
+    background-size: cover;
+}
+.nav_images .images li .images_two {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/10.jpg") center;
+    background-size: cover;
+}
+.nav_images .images li .images_there {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/11.jpg") center;
+    background-size: cover;
+}
+.nav_images .images li .images_four {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url("../img/12.jpg") center;
+    background-size: cover;
+}
+/*banner*/
+.bannerbox {
+    width: 100%;
+    height: 594px;
+    float:left;
+    position: relative;
+    background:  #0a0a0a;
+    overflow: hidden;
+}
+.leftbtn,.rightbtn{
+    height:100%;
+    width:20%;
+    position: absolute;
+    top:0;
+    cursor: pointer;
+    z-index: 88888;
+}
+.leftbtn{
+    left:0;
+}
+.rightbtn{
+    right:0;
+}
+
+/*span在最下面*/
+
+.leftbtn span{
+    margin-left:20px;
+}
+.rightbtn span{
+    margin-left:50px;
+}
+.leftbtn:hover span{
+    color: #454545;
+    background: #2c2c2c;
+}
+.rightbtn:hover span{
+    color: #454545;
+    background: #2c2c2c;
+}
+.bannerbox .wordbox{
+    width: 100%;
+    position: absolute;
+    top:14%;
+    z-index: 100;
+}
+.bannerbox .wordbox h1,h2{
+    color:#fff;
+    text-align: center;
+}
+.bannerbox .wordbox h2{
+    margin-top:-12px;
+    margin-left:-20px;
+}
+.bannerbox .wordbox h1{
+    padding-left:0.4em;
+    font-size: 48px;
+    line-height: 1.04167;
+    font-weight: 500;
+    letter-spacing: .006em;
+}
+.bannerbox .imgbox {
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 25;
+}
+.bannerbox .imgbox li{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position:absolute;
+    top:0;
+    left:100%;
+}
+.bannerbox .imgbox li:nth-child(1){
+    display: block;
+    width:100%;
+    height:100%;
+    left:0;
+    background: url("../img/iphone_alt_small.jpg") no-repeat center;
+    background-size: contain;
+    opacity: 1;
+    background-color: #000000;
+}
+.bannerbox .imgbox li:nth-child(2){
+    display: block;
+    width:100%;
+    height:100%;
+    background: url("../img/watch_alt_medium.jpg") no-repeat center;
+    background-size: contain;
+    background-color: #f3f3f3;
+}
+.bannerbox .imgbox li:nth-child(3){
+    display: block;
+    width:100%;
+    height:100%;
+    background: url("../img/macbookpro_small.jpg") no-repeat center;
+    background-size: contain;
+    background-color: #ffffff;
+}
+.btnbox{
+    width:180px;
+    height:22px;
+    position: absolute;
+    bottom:30px;
+    left:25%;
+    z-index:300 ;
+}
+.btnbox li{
+    width:30%;
+    height:3px;
+    background: #cccccc;
+    float:left;
+    margin-right:5px;
+    position: relative;
+}
+.btnbox li .progress{
+    width:0%;
+    height:3px;
+    background: #4d4b4b;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 10000;
+}
+
+.leftbtn a:hover{
+    color: #333333;
+    background: #cccccc;
+}
+.rightbtn a:hover{
+    color: #333333;
+    background: #cccccc;
+}
+/*banner*/
+footer {
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+}
+
+div.iphone7 {
+    height: auto;
+    width: 96%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D6D6D6;
+    font-size: 12px;
+    color: #888;
+    margin: 0 auto;
+}
+
+div.list h5 {
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    margin: 6px 0;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+div.list h5 span:first-child {
+    float: left;
+}
+
+div.list h5 span:last-child {
+    float: right;
+}
+
+div.list ul {
+    border-bottom: 1px solid #666;
+}
+
+div.list li {
+    display: none;
+}
+
+div.foot {
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    border-bottom: 1px solid #D6D6D6;
+    font-size: 12px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    color: #888;
+}
+div.foot a{
+    color:dodgerblue;
+}
+div.foot-sencond {
+    width: 96%;
+    height: 24px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #888;
+    margin-top: 8px;
+}
+
+div.foot-sencond span:first-child {
+    margin-right: 20px;
+}
+
+div.foot-sencond p {
+    margin-top: 8px;
+    font-size: 11px;
+}
+
+div.foot-sencond a {
+    color: #333;
+    margin: 0 5px;
+}
+.bannerbox .leftbtn span,.bannerbox .rightbtn span{
+    width:64px;
+    height:64px;
+    background: #cccccc;
+    cursor: pointer;
+    margin-top:265px;
+    color: #c0c0c0;
+    line-height: 64px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    display: none;
+    z-index: 40;
+}
+/*中屏*/
+@media screen and (min-width: 765px) {
+    .small {
+        display: none;
+    }
+    .large {
+        display: block;
+        min-width: 765px;
+        height: 44px;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .large .lag_content {
+        max-width: 1024px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .large .lag_content li {
+        width: 11.11111%;
+        height: 100%;
+        float: left;
+        text-align: center;
+    }
+    .large .lag_content li a {
+        color: #fff;
+        line-height: 44px;
+        text-align: center;
+        font-size: 17px;
+    }
+    .nav_images .images li {
+        width: 50%;
+        float: left;
+    }
+
+    .nav_images .images li .images_one {
+        background: url("../img/5.jpg") center;
+    }
+
+    .nav_images .images li .images_two {
+        background: url("../img/6.jpg") center;
+    }
+
+    .nav_images .images li .images_there {
+        background: url("../img/7.jpg") center;
+    }
+
+    .nav_images .images li .images_four {
+        background: url("../img/8.jpg") center;
+    }
+    /*banner*/
+    .bannerbox {
+        width: 100%;
+        height: 594px;
+        float:left;
+        position: relative;
+        background:  #0a0a0a;
+        overflow: hidden;
+    }
+    .leftbtn,.rightbtn{
+        height:100%;
+        width:20%;
+        position: absolute;
+        top:0;
+        cursor: pointer;
+        z-index: 88888;
+    }
+    .leftbtn{
+        left:0;
+    }
+    .rightbtn{
+        right:0;
+    }
+
+    /*span在最下面*/
+
+    .leftbtn span{
+        margin-left:20px;
+    }
+    .rightbtn span{
+        margin-left:110px;
+    }
+    .leftbtn:hover span{
+        color: #454545;
+        background: #2c2c2c;
+    }
+    .rightbtn:hover span{
+        color: #454545;
+        background: #2c2c2c;
+    }
+    .bannerbox .wordbox{
+        width: 100%;
+        position: absolute;
+        top:14%;
+        z-index: 100;
+    }
+    .bannerbox .wordbox h1,h2{
+        color:#fff;
+        text-align: center;
+    }
+    .bannerbox .wordbox h2{
+        margin-top:-12px;
+        margin-left:-20px;
+    }
+    .bannerbox .wordbox h1{
+        padding-left:0.4em;
+        font-size: 48px;
+        line-height: 1.04167;
+        font-weight: 500;
+        letter-spacing: .006em;
+    }
+    .bannerbox .imgbox {
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        z-index: 25;
+    }
+    .bannerbox .imgbox li{
+        width: 100%;
+        height: 100%;
+        display: block;
+        position:absolute;
+        top:0;
+        left:100%;
+    }
+    .bannerbox .imgbox li:nth-child(1){
+        display: block;
+        width:100%;
+        height:100%;
+        left:0;
+        background: url("../img/iphone_alt_large.jpg") no-repeat center;
+        background-size: contain;
+        opacity: 1;
+        background-color: #000000;
+    }
+    .bannerbox .imgbox li:nth-child(2){
+        display: block;
+        width:100%;
+        height:100%;
+        background: url("../img/watch_alt_medium.jpg") no-repeat center;
+        background-size: contain;
+        background-color: #f3f3f3;
+    }
+    .bannerbox .imgbox li:nth-child(3){
+        display: block;
+        width:100%;
+        height:100%;
+        background: url("../img/macbookpro_large.jpg") no-repeat center;
+        background-size: contain;
+        background-color: #ffffff;
+    }
+    .btnbox{
+        width:180px;
+        height:22px;
+        position: absolute;
+        bottom:30px;
+        left:45%;
+        z-index:300 ;
+    }
+    .btnbox li{
+        width:30%;
+        height:3px;
+        background: #cccccc;
+        float:left;
+        margin-right:5px;
+        position: relative;
+    }
+    .btnbox li .progress{
+        width:0%;
+        height:3px;
+        background: #4d4b4b;
+        position: absolute;
+        top:0;
+        left:0;
+        z-index: 10000;
+    }
+
+    .leftbtn a:hover{
+        color: #333333;
+        background: #cccccc;
+    }
+    .rightbtn a:hover{
+        color: #333333;
+        background: #cccccc;
+    }
+    /*banner*/
+    footer {
+        width: 95%;
+        height: 245px;
+        margin: 0 auto;
+    }
+
+    div.iphone7 {
+        height: 50px;
+        width: 96%;
+        line-height: 50px;
+        border-bottom: 1px solid #D6D6D6;
+        font-size: 12px;
+        color: #888;
+        margin: 0 auto;
+    }
+
+    div.list {
+        width: 20%;
+        height: auto;
+        float: left;
+        margin-top: 20px;
+    }
+
+    div.list h5 {
+        color: #333;
+        height: 20px;
+        line-height: 20px;
+        font-weight: 600;
+        margin: 0px;
+    }
+
+    div.list h5 ~ h5 {
+        margin-top: 16px;
+        font-size: 11px;
+    }
+    div.list ul{
+        display: block;
+        border-bottom: 0px;
+    }
+    div.list li {
+        font-size: 11px;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    div.list h5 span:last-child {
+        display: none;
+    }
+
+    div.foot {
+        width: 96%;
+        height: 24px;
+        margin: 0 auto;
+        border-bottom: 1px solid #D6D6D6;
+        font-size: 12px;
+        margin-top: 30px;
+        color: #888;
+    }
+
+    div.foot-sencond {
+        width: 96%;
+        height: 24px;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #888;
+        margin-top: 8px;
+    }
+
+    div.foot-sencond span:first-child {
+        margin-right: 20px;
+    }
+
+    div.foot-sencond p {
+        margin-top: 8px;
+    }
+
+    div.foot-sencond a {
+        color: #333;
+        margin: 0 5px;
+    }
+    .bannerbox .leftbtn span,.bannerbox .rightbtn span{
+        width:64px;
+        height:64px;
+        background: #cccccc;
+        cursor: pointer;
+        margin-top:265px;
+        color: #c0c0c0;
+        line-height: 64px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 30px;
+        display: none;
+        z-index: 40;
+    }
+}
+    /*大屏*/
+    @media screen and (min-width: 1200px) {
+        /*导航*/
+        .small {
+            display: none;
+        }
+        .large {
+            display: block;
+            min-width: 765px;
+            height: 44px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .large .lag_content {
+            max-width: 1024px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .large .lag_content li {
+            width: 11.11111%;
+            height: 100%;
+            float: left;
+            text-align: center;
+        }
+        .large .lag_content li a {
+            color: #fff;
+            line-height: 44px;
+            text-align: center;
+            font-size: 17px;
+        }
+
+         /*banner*/
+        .bannerbox {
+            width: 100%;
+            height: 594px;
+            float:left;
+            position: relative;
+            background:  #0a0a0a;
+            overflow: hidden;
+        }
+        .leftbtn,.rightbtn{
+            height:100%;
+            width:20%;
+            position: absolute;
+            top:0;
+            cursor: pointer;
+            z-index: 88888;
+        }
+        .leftbtn{
+            left:0;
+        }
+        .rightbtn{
+            right:0;
+        }
+
+        /*span在最下面*/
+
+        .leftbtn span{
+            margin-left:20px;
+        }
+        .rightbtn span{
+            margin-left:210px;
+        }
+        .leftbtn:hover span{
+            color: #454545;
+            background: #2c2c2c;
+        }
+        .rightbtn:hover span{
+            color: #454545;
+            background: #2c2c2c;
+        }
+        .bannerbox .wordbox{
+            width: 100%;
+            position: absolute;
+            top:14%;
+            z-index: 100;
+        }
+        .bannerbox .wordbox h1,h2{
+            color:#fff;
+            text-align: center;
+        }
+        .bannerbox .wordbox h2{
+            margin-top:-12px;
+            margin-left:-20px;
+        }
+        .bannerbox .wordbox h1{
+            padding-left:0.4em;
+            font-size: 48px;
+            line-height: 1.04167;
+            font-weight: 500;
+            letter-spacing: .006em;
+        }
+        .bannerbox .imgbox {
+            max-width: 100%;
+            height: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 25;
+        }
+        .bannerbox .imgbox li{
+            width: 100%;
+            height: 100%;
+            display: block;
+            position:absolute;
+            top:0;
+            left:100%;
+        }
+        .bannerbox .imgbox li:nth-child(1){
+            display: block;
+            width:100%;
+            height:100%;
+            background: url("../img/iphone_alt_large.jpg") no-repeat center;
+            background-size: contain;
+            opacity: 1;
+            left:0;
+            background-color: #000000;
+        }
+        .bannerbox .imgbox li:nth-child(2){
+            display: block;
+            width:100%;
+            height:100%;
+            background: url("../img/watch_alt_large.jpg") no-repeat center;
+            background-size: contain;
+            background-color: #f3f3f3;
+        }
+        .bannerbox .imgbox li:nth-child(3){
+            display: block;
+            width:100%;
+            height:100%;
+            background: url("../img/macbookpro_large.jpg") no-repeat center;
+            background-size: contain;
+            background-color: #ffffff;
+        }
+        .btnbox{
+            width:180px;
+            height:22px;
+            position: absolute;
+            bottom:30px;
+            left:45%;
+            z-index:300 ;
+        }
+        .btnbox li{
+            width:30%;
+            height:3px;
+            background: #cccccc;
+            float:left;
+            margin-right:5px;
+            position: relative;
+        }
+        .btnbox li .progress{
+            width:0%;
+            height:3px;
+            background: #4d4b4b;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 10000;
+        }
+
+        .leftbtn a:hover{
+            color: #333333;
+            background: #cccccc;
+        }
+        .rightbtn a:hover{
+            color: #333333;
+            background: #cccccc;
+        }
+         /*banner*/
+        /*四张图*/
+        .nav_images .images li {
+            width: 25%;
+        }
+        .nav_images .images li .images_one {
+            background: url("../img/1.jpg") center;
+        }
+        .nav_images .images li .images_two {
+            background: url("../img/2.jpg") center;
+        }
+        .nav_images .images li .images_there {
+            background: url("../img/3.jpg") center;
+        }
+        .nav_images .images li .images_four {
+            background: url("../img/4.jpg") center;
+        }
+         /*底部*/
+        footer {
+            width: 980px;
+            height: auto;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        div.iphone7 {
+            height: 50px;
+            width: 980px;
+            line-height: 50px;
+            border-bottom: 1px solid #D6D6D6;
+            font-size: 12px;
+            color: #888;
+            margin: 0 auto;
+        }
+        div.list {
+            width: 20%;
+            height: auto;
+            float: left;
+            margin-top: 20px;
+        }
+        div.list ul {
+            display: block;
+        }
+        div.list h5 {
+            color: #333;
+            margin-bottom: 6px;
+        }
+        div.list li {
+            font-size: 11px;
+        }
+        div.foot {
+            width: 980px;
+            height: 24px;
+            margin: 0 auto;
+            border-bottom: 1px solid #D6D6D6;
+            font-size: 12px;
+            margin-top: 30px;
+            color: #888;
+        }
+        div.foot-sencond {
+            width: 980px;
+            height: 24px;
+            margin: 0 auto;
+            font-size: 12px;
+            color: #888;
+            margin-top: 8px;
+        }
+        div.foot-sencond span:first-child {
+            margin-right: 20px;
+        }
+        div.foot-sencond p {
+            margin-top: 8px;
+        }
+        div.foot-sencond a {
+            color: #333;
+            margin: 0 5px;
+        }
+        .bannerbox .leftbtn span,.bannerbox .rightbtn span{
+            width:64px;
+            height:64px;
+            background: #cccccc;
+            cursor: pointer;
+            margin-top:265px;
+            color: #c0c0c0;
+            line-height: 64px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 30px;
+            display: none;
+            z-index: 40;
+        }
+    }
+
+    /*底部*/
+
